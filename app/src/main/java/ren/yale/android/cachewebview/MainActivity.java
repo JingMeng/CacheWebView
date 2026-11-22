@@ -1,10 +1,10 @@
-package ren.yale.android.cachewebview;
+﻿package ren.yale.android.cachewebview;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.WebResourceRequest;
@@ -145,3 +145,4 @@ public class MainActivity extends Activity {
         super.onBackPressed();
     }
 }
+

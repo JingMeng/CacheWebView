@@ -1,12 +1,16 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.3"
+    namespace 'ren.yale.android.cachewebviewlib'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 21
+        minSdk 14
+        targetSdk 34
         versionCode 1
         versionName "0.1"
 
@@ -17,6 +21,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
@@ -24,4 +29,5 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 }
 
-apply from: './config/bintray.gradle'
+
+
